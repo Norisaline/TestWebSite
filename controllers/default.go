@@ -8,18 +8,12 @@ type MainController struct {
 	beego.Controller
 }
 
-func (c *MainController) Get() {
-	c.Data["Website"] = "kakoito-site.com"
-	c.Data["Email"] = "Norisaline@gmail.com"
-	c.TplName = "index.html"
-}
-
-func (c *MainController) index() {
+func (c *MainController) Index() {
 	c.TplName = "index.html"
 }
 
 func (c *MainController) Home() {
-	c.TplName = "index.html"
+	c.TplName = "home.html"
 }
 
 func (c *MainController) About() {
